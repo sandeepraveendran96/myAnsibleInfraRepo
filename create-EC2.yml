@@ -8,7 +8,7 @@
    vars:
      keypair: myJenkinsKey
      instance_type: t2.micro
-     image: ami-0884d2865dbe9de4b
+     image: ami-0c3b809fcf2445b6a
      wait: yes
      group: webserver
      count: 1
