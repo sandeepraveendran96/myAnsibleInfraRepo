@@ -1,9 +1,11 @@
 ---
-- name: My playbook
-  hosts: localhost
-  vars:
-    ansible_python_interpreter: /usr/bin/python3
-  vars:
+ - name:  provisioning a new EC2 using Ansible playbook
+   hosts: localhost
+   connection: local
+   gather_facts: False
+   tags: provisioning
+   
+   vars:
        keypair: myJenkinsKey
        instance_type: t2.micro
        image: ami-0c3b809fcf2445b6a
