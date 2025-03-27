@@ -1,10 +1,5 @@
 ---
- - name:  provisioning a new EC2 using Ansible playbook
-   hosts: localhost
-   connection: local
-   gather_facts: False
-   tags: provisioning
- - name: My playbook
+- name: My playbook
   hosts: localhost
   vars:
     ansible_python_interpreter: /usr/bin/python3
