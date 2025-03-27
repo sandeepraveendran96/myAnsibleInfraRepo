@@ -10,7 +10,7 @@
           - boto3
           - botocore
 
-   vars:
+- vars:
      keypair: myJenkinsKey
      instance_type: t2.micro
      image: ami-0c3b809fcf2445b6a
@@ -20,7 +20,7 @@
      region: us-east-2
      security_group: ec2-security-group
    
-   tasks:
+  -tasks:
 
      - name: Create a security group
        local_action: 
